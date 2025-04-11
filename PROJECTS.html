@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Project with Explanations</title>
+  <style>
+    body {
+        margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+     background-image: url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/490066863_661574026580331_9204147739132058462_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGcrmOARkUGfTkme6wqXvlil-dzwd6a-6WX53PB3pr7pcEcd2YgQ5Ni1UL_wEIFOBp7WEfmkWx6SGkb8ZDAwYps&_nc_ohc=-YiZnj0CrS8Q7kNvwGvTAtd&_nc_oc=AdnXxxhdwMaPx2zSwFLSbIGtwsaEDGyjGHDEPBunj4MHxDrZvqP-rEBwzRcZTr373Ss&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD2AHRh97ADX3wZwqf55cqd3esEAkW4mcU96jfoiSQHpFNxg&oe=681FD701');
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: top center;
+     background-attachment: fixed;
+    background-color: black;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #313131;
+      padding: 10px 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      background: #f14fa8;
+      padding: 10px 25px;
+      border-radius: 40px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #f07fd3;
+      transform: scale(1.1);
+    }
+
+    .logo-text {
+      color: #ff7cae;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    /* About Button in Upper Left */
+    .about-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #f07fd3;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .about-btn:hover {
+      background-color: #ffbde6;
+      transform: scale(1.05);
+    }
+
+    /* Image Section */
+    .image-section {
+      display: flex;
+      justify-content: space-around;
+      margin: 60px 0;
+      padding: 20px;
+    }
+
+    .image-container {
+        text-align: center;
+     border: 3px solid #583e5e;
+    border-radius: 15px;
+     width: 250px;
+     padding: 20px;
+    background-color: rgb(255, 168, 241); /* Add this line to make it fully white */
+      transition: transform 0.3s ease;
+    }
+
+    .image-container:hover {
+      transform: scale(1.1);
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .image-description {
+      margin-top: 10px;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="navbar">
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="ABOUT ME.html">ABOUT ME</a>
+      <a href="PORTFOLIO.html">PORTFOLIO</a>
+      <a href="PROJECTS.html">PROJECTS</a>
+      <a href="CONTACTS.html">CONTACTS</a>
+    </div>
+    <div class="logo-text">
+      Cediesyymiaw
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/488770701_646438095019527_5568608433851746475_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGT8lSpSvwZBMzsY-f25Eg4UxQiWGGReXNTFCJYYZF5c30e6-ABX6hipinFiffA29NsDb_dg4L06NTzyYqpyLCt&_nc_ohc=TkwFGLDE4ncQ7kNvwEqdKMK&_nc_oc=Adm4XRtTnzK8GHLPm42YVMWuLR_nsnFipsr0nz1hpxNwseFmtWlzX8IUkfvKEkASIZk&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD2AE43oseL57jMbfgBycBESfBkGp2YtqJnHvoTZkKTOWACA&oe=681FE1EE" alt="Logo" class="logo-img" />
+    </div>
+  </div>
+
+  <!-- IMAGE SECTION -->
+  <div class="image-section">
+    <div class="image-container">
+      <img src="https://blog.codinghorror.com/content/images/uploads/2009/12/6a0120a85dcdae970b01287770a77f970c-pi.jpg" alt="Image 1">
+      <div class="image-description">During my Senior High School years, I gained hands-on experience in building and rebuilding desktop computers, which sparked my passion for Information Technology. One of the most memorable projects was assembling a PC from scratch, where I learned to identify and properly install components like the motherboard, CPU, RAM, and storage.
+
+At first, the process was challenging, especially with cable management and avoiding hardware damage. But with practice, I became more confident in assembling parts, applying thermal paste, and configuring BIOS settings. I also had the chance to troubleshoot older systems—cleaning, upgrading components, and reinstalling operating systems—deepening my understanding of hardware compatibility and system optimization.</div>
+    </div>
+    <div class="image-container">
+      <img src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/03/08151659/grab-attention-website-home-page-introduction-15.png" alt="Image 2">
+      <div class="image-description">I created a website for a project, carefully designing it with a user-friendly interface and smooth functionality to showcase my technical and creative skills. The website serves not only as a platform to display my portfolio and experiences, but also as a space where visitors can easily navigate and access valuable content. From layout planning to styling and responsive design, I focused on delivering an engaging and functional experience for users across different devices.</div>
+    </div>
+    <div class="image-container">
+      <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.15752-9/488927545_1707237863165205_4287266332183964747_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFmIsENZXEpsO3DQYzV3OvP9WuzvvWcfcb1a7O-9Zx9xhDlm-abqFH_cgQoXSJ1CVf9E5uriy7ZSNz4OYjQbtBp&_nc_ohc=pEoFlcSFwtcQ7kNvwEqiobm&_nc_oc=AdmxsMKDtGEeB13XB9tu6ISBqtU1nGOpQfErwDQ-dfvImL-7eBpVHVQ9JZL_PV53xpo&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&oh=03_Q7cD2AGrnwe37wWW15E4SJD-NrPQ47qQAqQacSympjlgnH7CWA&oe=6820153A" alt="Image 3">
+      <div class="image-description">I organized a fun basketball game for my friends, where we split into teams and enjoyed some friendly competition. We played for hours, bonding over good sportsmanship and plenty of laughs, making it a memorable day for everyone involved. It was a great way to unwind and strengthen our friendships through teamwork and shared excitement.</div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

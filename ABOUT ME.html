@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-image: url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/490066863_661574026580331_9204147739132058462_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGcrmOARkUGfTkme6wqXvlil-dzwd6a-6WX53PB3pr7pcEcd2YgQ5Ni1UL_wEIFOBp7WEfmkWx6SGkb8ZDAwYps&_nc_ohc=-YiZnj0CrS8Q7kNvwGvTAtd&_nc_oc=AdnXxxhdwMaPx2zSwFLSbIGtwsaEDGyjGHDEPBunj4MHxDrZvqP-rEBwzRcZTr373Ss&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD2AHRh97ADX3wZwqf55cqd3esEAkW4mcU96jfoiSQHpFNxg&oe=681FD701');
+      background-size: cover;
+      background-position: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+
+    .nav-links li {
+      margin: 0;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      background-color: #f14fa8;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-size: 14px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #f07fd3;
+      transform: scale(1.1);
+    }
+
+    .brand {
+      color: #ffb3d1;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .about-section {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .about-section img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    .about-text p {
+      text-align: justify;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="ABOUT ME.html">ABOUT ME</a></li>
+      <li><a href="CONTACTS.html">CONTACTS</a></li>
+      <li><a href="PORTFOLIO.html">PORTFOLIO</a></li>
+      <li><a href="PROJECTS.html">PROJECTS</a></li>
+    </ul>
+    <div class="brand">
+      Cediesymiiaw
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/488770701_646438095019527_5568608433851746475_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGT8lSpSvwZBMzsY-f25Eg4UxQiWGGReXNTFCJYYZF5c30e6-ABX6hipinFiffA29NsDb_dg4L06NTzyYqpyLCt&_nc_ohc=TkwFGLDE4ncQ7kNvwEqdKMK&_nc_oc=Adm4XRtTnzK8GHLPm42YVMWuLR_nsnFipsr0nz1hpxNwseFmtWlzX8IUkfvKEkASIZk&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD2AE43oseL57jMbfgBycBESfBkGp2YtqJnHvoTZkKTOWACA&oe=681FE1EE" alt="Logo" class="logo-img">
+    </div>
+  </header>
+
+  <section class="about-section">
+    <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/474115841_572644099094443_6857070963945921097_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHx7LQLiM8N3EJJO0zEnR7xfvqU67ADapx--pTrsANqnJ2z4al75B-ZwLSVrZy60uHwuIcNWDygr8Uo-NQJBTv7&_nc_ohc=gY4CNhbotUsQ7kNvwFFZ-wY&_nc_oc=AdmZ-6GzpbKnPHp-Z7xn3J8gbKAXuNl1TNu1SLKn55oHIym5LVAORNGY3LAR7ITDUrE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD2AFtvZZw9f-gBWKKxLOFRHDB_7pg88gybUhem6QT2YCOFA&oe=681FF44E" alt="Profile Picture">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hello, my name is John Cedrick Bucio, and I am a 20-year-old IT student now in my first year of college.
+        I've always loved animals, particularly cats and dogs—they're my favorites! I also enjoy sports, particularly
+        basketball, and getting outside to see new locations. In my leisure time, I also like playing online games.
+        I opted to pursue a degree in information technology because I enjoy programming and aspire to make a difference
+        in the IT industry.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

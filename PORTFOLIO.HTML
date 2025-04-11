@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-image: url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/490066863_661574026580331_9204147739132058462_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGcrmOARkUGfTkme6wqXvlil-dzwd6a-6WX53PB3pr7pcEcd2YgQ5Ni1UL_wEIFOBp7WEfmkWx6SGkb8ZDAwYps&_nc_ohc=-YiZnj0CrS8Q7kNvwGvTAtd&_nc_oc=AdnXxxhdwMaPx2zSwFLSbIGtwsaEDGyjGHDEPBunj4MHxDrZvqP-rEBwzRcZTr373Ss&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD2AHRh97ADX3wZwqf55cqd3esEAkW4mcU96jfoiSQHpFNxg&oe=681FD701');
+      background-size: cover;
+      background-position: center;
+      animation: fadeInBody 2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      background-color: #f14fa8;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-size: 14px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #f07fd3;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #f14fa8;
+    }
+
+    .brand {
+      color: #ffb3d1;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .portfolio-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      animation: slideUp 1.5s ease;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .portfolio-section h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #000;
+      animation: fadeInTitle 2s ease-in;
+    }
+
+    @keyframes fadeInTitle {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .portfolio-section h3 {
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    .portfolio-section p {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .profile-pic {
+      float: left;
+      width: 140px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 20px;
+      animation: fadeInLeft 1s ease;
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .portfolio-section img[src*="flaticon"] {
+      transition: transform 0.3s;
+    }
+
+    .portfolio-section img[src*="flaticon"]:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="ABOUT ME.html">ABOUT ME</a></li>
+      <li><a href="CONTACTS.html">CONTACTS</a></li>
+      <li><a href="PROJECTS.html">PROJECTS</a></li>
+      <li><a href="PROJECTS.html">PROJECTS</a></li>
+    </ul>
+    <div class="brand">
+      Cediesymiiaw
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/488770701_646438095019527_5568608433851746475_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGT8lSpSvwZBMzsY-f25Eg4UxQiWGGReXNTFCJYYZF5c30e6-ABX6hipinFiffA29NsDb_dg4L06NTzyYqpyLCt&_nc_ohc=TkwFGLDE4ncQ7kNvwEqdKMK&_nc_oc=Adm4XRtTnzK8GHLPm42YVMWuLR_nsnFipsr0nz1hpxNwseFmtWlzX8IUkfvKEkASIZk&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD2AE43oseL57jMbfgBycBESfBkGp2YtqJnHvoTZkKTOWACA&oe=681FE1EE" alt="Logo" class="logo-img">
+    </div>
+  </header>
+
+  <section class="portfolio-section">
+    <h2>MY PORTFOLIO</h2>
+    <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/474115841_572644099094443_6857070963945921097_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHx7LQLiM8N3EJJO0zEnR7xfvqU67ADapx--pTrsANqnJ2z4al75B-ZwLSVrZy60uHwuIcNWDygr8Uo-NQJBTv7&_nc_ohc=gY4CNhbotUsQ7kNvwFFZ-wY&_nc_oc=AdmZ-6GzpbKnPHp-Z7xn3J8gbKAXuNl1TNu1SLKn55oHIym5LVAORNGY3LAR7ITDUrE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD2AFtvZZw9f-gBWKKxLOFRHDB_7pg88gybUhem6QT2YCOFA&oe=681FF44E" alt="Profile Picture" class="profile-pic">
+    <h3>Education</h3>
+    <p>
+      Hello, my name is John Cedrick Bucio, and I am a 20-year-old IT student now in my first year of college...
+    </p>
+
+    <h3>Educational Background</h3>
+    <ul style="line-height: 1.8; font-size: 16px;">
+      <li><strong>Elementary:</strong> Mother Conception of Better Learning Center Inc. (2012 – 2016)</li>
+      <li><strong>High School:</strong> Guardian Angel School Inc. (2016 – 2021)</li>
+      <li><strong>High School:</strong> Deparo High School (2021 – 2022)</li>
+      <li><strong>Senior High School:</strong> Escuela De Sophia of Caloocan Inc. (2022 – 2024)</li>
+      <li><strong>College:</strong> Our Lady of Fatima University (2024 – 2025)</li>
+    </ul>
+    <hr>
+    <p>I am currently pursuing a degree in Information Technology at the University of Our Lady of Fatima 
+        in Quezon City, where I am building a strong foundation in computer science, programming, and web 
+        development. My passion for technology began during my Junior and Senior high school years at 
+        Escuela De Sophia inc. where I was first introduced to the fundamentals of programming.
+         Since then, I have continued to deepen my understanding of various programming languages
+          and development tools. Through both academic learning and hands-on experience, I am continually
+         enhancing my skills and preparing for a future career in the tech industry.</p>
+        <hr>
+    <h3>Skills</h3>
+    <div style="display: flex; flex-direction: column; gap: 20px; font-size: 16px;">
+      <div>
+        <h4>Communication Skills</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/9068/9068756.png" alt="Communication Icon" style="width: 50px;">
+        <p>I possess exceptional oral and written communication skills, which allow me to 
+            effectively convey complex ideas in a clear and concise manner. Whether presenting 
+            technical concepts to a non-technical audience or collaborating with team members on 
+            group projects, I am confident in my ability to communicate with clarity and professionalism.
+             My strong command of language has also been instrumental in writing reports, documentation,
+              and other written materials with accuracy and attention to detail. 
+              These communication skills not only enhance my ability to work well in diverse 
+              teams but also enable me to contribute meaningfully in both academic and professional 
+              settings.
+
+        </p>
+      </div>
+
+      <div>
+        <h4>Time Management</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/2937/2937744.png" alt="Time Icon" style="width: 50px;">
+        <p>I am highly skilled at efficiently managing my time and prioritizing tasks, ensuring that 
+            I meet deadlines while consistently delivering high-quality work. I utilize a combination 
+            of strategic planning, effective time-blocking techniques, and an organized approach to 
+            handle multiple tasks simultaneously. This ability to stay focused and maintain a structured
+             workflow allows me to navigate competing priorities without compromising the quality of my
+              work. Whether working on individual assignments, collaborative projects, or tight 
+              deadlines, I consistently demonstrate a strong commitment to both productivity and 
+              excellence. My time management skills are essential in helping me maintain a balance 
+              between academic, personal, and professional responsibilities.</p>
+      </div>
+
+      <div>
+        <h4>Technical Skills</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/4185/4185584.png" alt="Tech Icon" style="width: 50px;">
+        <ul style="line-height: 1.8;">
+            Experienced in assembling/disassembling computer systems and configuring hardware. 
+            Skilled in programming with C, JavaScript, HTML, and CSS. 
+            Adept at troubleshooting and optimizing system performance. 
+            Familiar with coding best practices and responsive web design.
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

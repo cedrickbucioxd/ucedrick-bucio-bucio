@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Cedrick Bucio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-image: url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/490066863_661574026580331_9204147739132058462_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGcrmOARkUGfTkme6wqXvlil-dzwd6a-6WX53PB3pr7pcEcd2YgQ5Ni1UL_wEIFOBp7WEfmkWx6SGkb8ZDAwYps&_nc_ohc=-YiZnj0CrS8Q7kNvwGvTAtd&_nc_oc=AdnXxxhdwMaPx2zSwFLSbIGtwsaEDGyjGHDEPBunj4MHxDrZvqP-rEBwzRcZTr373Ss&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD2AHRh97ADX3wZwqf55cqd3esEAkW4mcU96jfoiSQHpFNxg&oe=681FD701');
+      background-size: cover;
+      background-position: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #313131;
+      padding: 10px 40px;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      background: #f14fa8;
+      padding: 10px 25px;
+      border-radius: 40px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      animation: bounceIn 1s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #f07fd3;
+      transform: scale(1.1);
+    }
+
+    .logo-text {
+      color: #ff7cae;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      color: black;
+      flex-wrap: wrap;
+      animation: fadeIn 2s ease;
+    }
+
+    .main-content .intro {
+      flex: 1;
+      animation: slideLeft 1.2s ease-out;
+    }
+
+    @keyframes slideLeft {
+      0% { transform: translateX(-100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    .main-content h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .main-content h2 {
+      font-size: 40px;
+      margin: 0 0 20px 0;
+    }
+
+    .about-btn {
+      background-color: #f07fd3;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .about-btn:hover {
+      background-color: #ffbde6;
+      transform: scale(1.05);
+    }
+
+    .profile-pic {
+      width: 500px;
+      max-width: 100%;
+      border-radius: 20px;
+      animation: slideRight 1.2s ease-out;
+    }
+
+    @keyframes slideRight {
+      0% { transform: translateX(100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    /* Bounce in animation */
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="navbar">
+    <div class="nav-links">
+      <li><a href="index.html">HOME</a></li> 
+      <li><a href="PORTFOLIO.html">PORTFOLIO</a></li>
+      <li><a href="PROJECTS.html">PROJECTS</a></li>
+      <li><a href="CONTACTS.html">CONTACTS</a></li>
+    </div>
+    <div class="logo-text">
+      Cediesyymiaw
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/488770701_646438095019527_5568608433851746475_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGT8lSpSvwZBMzsY-f25Eg4UxQiWGGReXNTFCJYYZF5c30e6-ABX6hipinFiffA29NsDb_dg4L06NTzyYqpyLCt&_nc_ohc=TkwFGLDE4ncQ7kNvwEqdKMK&_nc_oc=Adm4XRtTnzK8GHLPm42YVMWuLR_nsnFipsr0nz1hpxNwseFmtWlzX8IUkfvKEkASIZk&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD2AE43oseL57jMbfgBycBESfBkGp2YtqJnHvoTZkKTOWACA&oe=681FE1EE" alt="Logo" class="logo-img" />
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="intro">
+      <h1>HELLO I AM</h1>
+      <h2>JOHN CEDRICK BUCIO</h2>
+      <a href="ABOUT ME.html" class="about-btn">About me</a>
+    </div>
+    <div>
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/483858293_591364177283110_4147183110776026812_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGiJxa3B8YV8byEVYfbwp36gPZ5fSXzw1WA9nl9JfPDVaGc3kcMnIO4iLyNYuM7XJqwhi3gTTGZLEIQlGo6xQbS&_nc_ohc=S8Khdib58asQ7kNvwGfa1z8&_nc_oc=AdkGwul-m4IsNrfMLiVWGExYsnxmx0nuSmWBNFfxvVSXWLwkCxFIZpzeNHLYXpxB42o&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD2AGmMYznuzjwKjiC7dYsba4TCBh1k40bo8nEMjx0ozJdhQ&oe=681FEF26" alt="Profile" class="profile-pic" />
+    </div>
+  </div>
+
+</body>
+</html>

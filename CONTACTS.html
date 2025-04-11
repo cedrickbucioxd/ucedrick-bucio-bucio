@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fac0ff;
+      color: #000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #313131;
+      padding: 10px 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      background: #f14fa8;
+      padding: 10px 25px;
+      border-radius: 40px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #f07fd3;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .logo-text {
+      color: #ff7cae;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #715879;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      color: #fff;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-5px);
+      color: #f14fa8;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #000;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 10px #f14fa8;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #f14fa8;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      animation: softPulse 2.5s infinite;
+    }
+
+    @keyframes softPulse {
+      0%, 100% {
+        box-shadow: 0 0 10px rgba(241, 79, 168, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(241, 79, 168, 0.6);
+      }
+    }
+
+    button:hover {
+      background-color: #e0399f;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="navbar">
+    <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="ABOUT ME.html">ABOUT ME</a>
+        <a href="PORTFOLIO.html">PORTFOLIO</a>
+        <a href="PROJECTS.html">PROJECTS</a>
+        <a href="CONTACTS.html">CONTACTS</a>
+    </div>
+    <div class="logo-text">
+      Cediesyymiaw
+      <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/488770701_646438095019527_5568608433851746475_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGT8lSpSvwZBMzsY-f25Eg4UxQiWGGReXNTFCJYYZF5c30e6-ABX6hipinFiffA29NsDb_dg4L06NTzyYqpyLCt&_nc_ohc=TkwFGLDE4ncQ7kNvwEqdKMK&_nc_oc=Adm4XRtTnzK8GHLPm42YVMWuLR_nsnFipsr0nz1hpxNwseFmtWlzX8IUkfvKEkASIZk&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD2AE43oseL57jMbfgBycBESfBkGp2YtqJnHvoTZkKTOWACA&oe=681FE1EE" alt="Logo" class="logo-img" />
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="social-icons">
+      <a href="#"><i class="fas fa-phone"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.facebook.com/john.cedrick.7982" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.tiktok.com/@cedcedcedii?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/onlyceddd/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <form action="hello.html">
+      <input type="text" name="fullname" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="inquiries" rows="5" placeholder="Your Inquiries..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
